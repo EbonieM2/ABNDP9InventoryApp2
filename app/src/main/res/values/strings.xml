@@ -1,0 +1,55 @@
+<resources>
+        <string name="app_name">Kicks Inventory</string>
+        <string name="action_delete_all_entries">Delete all Kicks</string>
+        <string name="action_insert_dummy_data">Insert Dummy Data</string>
+        <string name="add_kicks">Add New Shoe</string>
+        <string name="save">Save</string>
+        <string name="action_delete">Delete</string>
+        <string name="overview">Overview</string>
+        <string name="hint_shoe_name">Shoe Name</string>
+        <string name="hint_price">Shoe Price</string>
+        <string name="product_name">Product Name</string>
+        <string name="shoe_price">Price</string>
+        <string name="price">Price</string>
+        <string name="quantity">Number in Stock</string>
+        <string name="supplier_name">Supplier Name</string>
+        <string name="supplier_phone">Supplier Phone</string>
+        <string name="phone_number">Phone Number</string>
+        <string name="list_item_buy_button">BUY</string>
+        <string name="cursor_adapter_zero">0</string>
+        <string name="dollar_sign">$</string>
+        <string name="minus">-</string>
+        <string name="plus">+</string>
+        <string name="editor_delete_button">Delete</string>
+        <string name="editor_order_button">Order</string>
+        <string name="editor_edit_button">EDIT</string>
+        <string name="empty_view_text">Ran out to get more sneakers!</string>
+        <string name="empty_view_subtext">Until we restock, use the plus sign to add your faves!</string>
+        <string name="delete_all_shoes">Delete all kicks?</string>
+        <string name="cancel">Cancel</string>
+        <string name="edit_shoe">Edit Shoe</string>
+        <string name="save_error">Error saving shoe.</string>
+        <string name="shoe_saved">Shoe saved successfully!</string>
+        <string name="update_failed">Shoe update failed!</string>
+        <string name="shoe_updated">Shoe updated!</string>
+        <string name="quit_edit">Quit editing and discard changes?</string>
+        <string name="discard">Discard</string>
+        <string name="keep_editing">Keep Editing</string>
+        <string name="delete_one">Delete this shoe?</string>
+        <string name="delete_error">Shoe was not deleted</string>
+        <string name="delete_successful">Shoe deleted!</string>
+        <string name="quantity_decreased">Quantity has decreased!</string>
+        <string name="quantity_increased">Quantity has increased!</string>
+        <string name="name_needed">Shoe name required</string>
+        <string name="price_needed">Price required</string>
+        <string name="quantity_needed">Quantity needed</string>
+        <string name="supplier_name_needed">Must add Supplier Name</string>
+        <string name="phone_needed">Must add phone number</string>
+        <string name="kicks_details">Kicks Details</string>
+        <string name="out_of_stock">Sorry we are currently out of this item! Please try again later!</string>
+        <string name="quantity_updated">Quantity Updated</string>
+    <string name="sold">Kicks sold!</string>
+
+</resources>
+
+

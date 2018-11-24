@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height"
+    android:background="@color/app_background"
+    android:minHeight="@dimen/height">
+
+    <Button
+        android:id="@+id/sale"
+        style="@style/ButtonStyle"
+        android:onClick="onPress"
+        android:text="@string/list_item_buy_button" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/sale"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/prodname_textview"
+            style="@style/ListItemStyle"
+            android:textAppearance="?android:textAppearanceSmall"
+            tools:text="Air Force Ones" />
+
+        <TextView
+            android:id="@+id/price_textview"
+            style="@style/ListItemStyle"
+            android:textAppearance="?android:textAppearanceSmall"
+            tools:text="$900" />
+
+        <TextView
+            android:id="@+id/quantity_textview"
+            style="@style/ListItemStyle"
+            android:autoLink="map|web"
+            android:textAppearance="?android:textAppearanceSmall"
+            tools:text="200" />
+
+        <Button
+            android:id="@+id/editor_edit_button"
+            style="@style/EditStyle"
+            android:text="@string/editor_edit_button" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

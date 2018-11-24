@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the editor -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin"
+    tools:context=".AddKicksActivity">
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/editorbuttons"
+        android:layout_gravity="right"
+        android:text="@string/editor_order_button" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shoename"
+            style="@style/EditorStyle"
+            android:text="@string/product_name" />
+
+        <EditText
+            android:id="@+id/edit_shoe_name"
+            style="@style/EditorStyle"
+            android:layout_below="@id/shoename"
+            tools:previewText="@string/hint_shoe_name" />
+
+        <TextView
+            android:id="@+id/shoeprice"
+            style="@style/EditorStyle"
+            android:layout_below="@id/edit_shoe_name"
+            android:text="@string/shoe_price" />
+
+        <EditText
+            android:id="@+id/edit_shoe_price"
+            style="@style/EditorStyle"
+            android:layout_below="@id/shoeprice"
+            tools:previewText="@string/price" />
+
+        <TextView
+            android:id="@+id/instock"
+            style="@style/EditorStyle"
+            android:layout_below="@id/edit_shoe_price"
+            android:text="Quantity" />
+
+        <RelativeLayout
+            android:id="@+id/quantitylayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instock">
+
+            <Button
+                android:id="@+id/decrement_id"
+                android:layout_width="@dimen/editorbuttons"
+                android:layout_height="@dimen/editorbuttons"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin"
+                android:text="@string/minus" />
+
+            <EditText
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toRightOf="@id/decrement_id"
+                android:text="@string/cursor_adapter_zero"
+                android:textColor="#000000"
+                android:textSize="@dimen/textsize" />
+
+            <Button
+                android:id="@+id/increment_id"
+                android:layout_width="@dimen/editorbuttons"
+                android:layout_height="@dimen/editorbuttons"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/quantity_text_view"
+                android:text="@string/plus" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/supplier"
+            style="@style/EditorStyle"
+            android:layout_below="@id/quantitylayout"
+            android:text="@string/supplier_name" />
+
+        <EditText
+            android:id="@+id/edit_supplier_name"
+            style="@style/EditorStyle"
+            android:layout_below="@id/supplier"
+            tools:previewText="@string/supplier_name" />
+
+        <TextView
+            android:id="@+id/supplier_phone"
+            style="@style/EditorStyle"
+            android:layout_below="@id/edit_supplier_name"
+            android:text="@string/supplier_phone" />
+
+        <EditText
+            android:id="@+id/edit_supplier_phone"
+            style="@style/EditorStyle"
+            android:layout_below="@id/supplier_phone"
+            tools:previewText="@string/phone_number" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin">
+
+        <Button
+            android:id="@+id/editor_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/editorbuttons"
+            android:layout_gravity="center"
+            android:text="@string/editor_delete_button" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
